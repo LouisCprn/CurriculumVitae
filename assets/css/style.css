@@ -82,6 +82,8 @@ img {
 
 #text1 {
     margin-top: 55px;
+    margin-left: 190px;
+    margin-right: 30px;
 }
 
 .bouton1 {
@@ -98,7 +100,7 @@ img {
 .bouton2 {
     font-family: "RobotoMono-Regular";
     margin-top: 60px;
-    margin-left: 355px;
+    margin-left: 425px;
     background-color: #8063E1;
     border-radius: 45px;
     text-align: center;
