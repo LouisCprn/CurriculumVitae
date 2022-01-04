@@ -37,10 +37,8 @@ ul li:nth-child(1) {
 ul li:hover {
     transform: scale(1.2);
     z-index: 3;
-
-
 }
 
 img {
-    width: 70px;
+    width: 120px;
 }
