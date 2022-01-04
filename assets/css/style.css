@@ -79,3 +79,29 @@ img {
     margin-left: 75px;
     font-family: "RobotoMono-Bold";
 }
+
+#text1 {
+    margin-top: 55px;
+}
+
+.bouton1 {
+    font-family: "RobotoMono-Regular";
+    margin-top: 80px;
+    margin-left: 225px;
+    background-color: #8063E1;
+    border-radius: 45px;
+    text-align: center;
+    border: 0;
+    padding: 2%;
+}
+
+.bouton2 {
+    font-family: "RobotoMono-Regular";
+    margin-top: 60px;
+    margin-left: 355px;
+    background-color: #8063E1;
+    border-radius: 45px;
+    text-align: center;
+    border: 0;
+    padding: 2%;
+}
