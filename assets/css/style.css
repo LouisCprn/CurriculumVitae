@@ -107,3 +107,35 @@ img {
     border: 0;
     padding: 2%;
 }
+
+/* ---------------------------------------------*/
+/* ------------------- CV ----------------------*/
+/* ---------------------------------------------*/
+
+.barredenav {
+    font-size: 25px;
+    font-family: "RobotoMono-Regular";
+    color: crimson;
+    background-color: rgb(9,9,121);
+    margin-bottom: 2%;
+}
+
+.cv {
+    background-color: crimson;
+    margin: 5% 10% 0 8%;
+    border-bottom: 4px solid rgba(0, 0, 0, .2);
+    border-right: 4px solid rgba(0, 0, 0, .2);
+    display: grid;
+    grid-template-columns: auto;
+    border-radius: 12px;
+    padding: 1%;
+}
+
+.cvtext {
+    font-family: "RobotoMono-Regular";
+    font-size: 15px;
+}
+
+#zeldasword {
+    height: 55px;
+}
