@@ -121,17 +121,36 @@ img {
 /* ---------------------------------------------*/
 
 
-.bouttontemplate {
-    border-radius: 15px;
-    background-color: #1c87c9;
-    box-shadow: 0 5px 0 #105cad;
-    color: white;
-   padding: 1em 1.5em;
-   position: relative;
-   text-decoration: none;
-   display: inline-block;
-   font-family: "RobotoMono-Bold";
-   text-align: center;
+.boutontemplate {
+  border-radius: 15px;
+  background-color: #1c87c9;
+  box-shadow: 0 5px 0 #105cad;
+  color: white;
+ padding: 1em 1.5em;
+ position: relative;
+ text-decoration: none;
+ display: inline-block;
+ font-family: "RobotoMono-Bold";
+ text-align: center;
+}
+
+.boutontemplate:hover {
+  background-color: #e9f7ff;
+  box-shadow: 0 5px 0 #9cb3cc;
+    color: #1c87c9;
+}
+
+.boutonsoon {
+  border-radius: 15px;
+  background-color: #1c87c9;
+  box-shadow: 0 5px 0 #105cad;
+  color: white;
+ padding: 1em 1.5em;
+ position: relative;
+ text-decoration: none;
+ display: inline-block;
+ font-family: "RobotoMono-Bold";
+ text-align: center;
 }
 
 #propos {
@@ -232,7 +251,7 @@ img {
 }
 
 .iconecompet {
-    font-size: 150%;
+    font-size: 200%;
 }
 
 .iconecompetcolor {
@@ -389,22 +408,3 @@ img {
 /* ------------------------------------------------*/
 /* -------------------- footer --------------------*/
 /* ------------------------------------------------*/
-
-  .boutonfooter {
-    border-radius: 15px;
-    background-color: #1c87c9;
-    box-shadow: 0 5px 0 #105cad;
-    color: white;
-   padding: 1em 1.5em;
-   position: relative;
-   text-decoration: none;
-   display: inline-block;
-   font-family: "RobotoMono-Bold";
-   text-align: center;
-  }
-
-  .boutonfooter:hover {
-    background-color: #e9f7ff;
-    box-shadow: 0 5px 0 #9cb3cc;
-      color: #1c87c9;
-  }
