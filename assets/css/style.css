@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 /* ------------------------------------*/
 /* --------------- Font ---------------*/
 /* ------------------------------------*/
@@ -132,12 +136,14 @@ img {
  display: inline-block;
  font-family: "RobotoMono-Bold";
  text-align: center;
+ transition: 0.66s;
 }
 
 .boutontemplate:hover {
   background-color: #e9f7ff;
   box-shadow: 0 5px 0 #9cb3cc;
-    color: #1c87c9;
+  color: #1c87c9;
+  transition: 0.33s;
 }
 
 .boutonsoon {
@@ -311,6 +317,30 @@ img {
 /* ------------------- CV ----------------------*/
 /* ---------------------------------------------*/
 
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #ffffff;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin: center;
+  transition: transform 0.50s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+
 .couleurblanc {
     color: white;
 }
@@ -376,7 +406,7 @@ img {
 }
 
 .iconecompetcolor {
-    color: #1c87c9;
+    color: #ffffff;
 }
 
 /* ------------------------------------------------*/
