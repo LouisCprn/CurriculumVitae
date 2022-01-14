@@ -25,8 +25,78 @@ html {
   src: url(../font/RobotoMono-Bold.ttf);
 }
 
-@media screen AND (min-width: 1024px) {
+@media screen AND (min-width: 768px) {
 
+  /* ------------------------------------*/
+  /* ------------- Cookies --------------*/
+  /* ------------------------------------*/
+
+  html {
+    overflow-y: hidden;
+  }
+  
+  #cookies {
+    display: flex;
+    font-family: "RobotoMono-Regular";
+    background: hsl(0 0% 0% / 0.5);
+    backdrop-filter: blur(1rem);
+    color: white;
+    bottom: 0%;
+    position: absolute;
+    padding: 2%;
+    width: 100%;
+  }
+
+  .btnaccepted {
+    font-family: "RobotoMono-Regular";
+    border-radius: 15px;
+    border: none;
+    background-color: #1c87c9;
+    box-shadow: 0 5px 0 #105cad;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    transition: 0.66s;
+    padding: 5px;
+    margin-left: 2%;
+  }
+
+  .btnaccepted:hover {
+    background-color: #e9f7ff;
+    box-shadow: 0 5px 0 #9cb3cc;
+    color: #1c87c9;
+    transition: 0.33s;
+  }
+  
+  .btnrefuse:hover {
+    background-color: #e9f7ff;
+    box-shadow: 0 5px 0 #9cb3cc;
+    color: #1c87c9;
+    transition: 0.33s;
+  }
+
+  .btnrefuse {
+    font-family: "RobotoMono-Regular";
+    border-radius: 15px;
+    border: none;
+    background-color: #1c87c9;
+    box-shadow: 0 5px 0 #105cad;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    transition: 0.66s;
+    padding: 5px;
+    margin-left: 2%;
+  }
+
+  .modale {
+    display: flex;
+    background-color: white;
+    font-family: "RobotoMono-Regular";
+    color: white;
+  }
 
   /* ------------------------------------*/
   /* ------- Couleur Background ---------*/
@@ -159,6 +229,7 @@ html {
     display: inline-block;
     font-family: "RobotoMono-Bold";
     text-align: center;
+    pointer-events: none;
   }
 
   #propos {
@@ -166,6 +237,7 @@ html {
     grid-row: 4/20;
     font-family: "RobotoMono-Bold";
     margin-left: 5%;
+    margin-top: 10%;
   }
 
   #text1 {
@@ -573,7 +645,7 @@ html {
   }
 }
 
-@media screen AND (max-width: 1024px) {
+@media screen AND (max-width: 768px) {
 
   html {
     overflow-x: hidden;
@@ -706,6 +778,7 @@ html {
     display: inline-block;
     font-family: "RobotoMono-Bold";
     text-align: center;
+    pointer-events: none;
   }
 
   #propos {
