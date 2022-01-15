@@ -34,7 +34,7 @@ html {
   html {
     overflow-y: hidden;
   }
-  
+
   #cookies {
     display: flex;
     font-family: "RobotoMono-Regular";
@@ -92,10 +92,116 @@ html {
   }
 
   .modale {
-    display: flex;
-    background-color: white;
+    font-family: "RobotoMono-Regular";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(36, 36, 39);
+    padding: 25px 25px 30px 25px;
+    border-radius: 15px;
+    box-shadow: 1px 7px 14px -5px rgba(0,0,0,0.15);
+    text-align: center;
+    color: white;
+    width: 23%;
+  }
+
+  .modale.hide{
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+  }
+
+  ::selection{
+    color: #fff;
+    background: #FCBA7F;
+  }
+
+  .content h2 {
+    margin-bottom: 8%;
+  }
+
+  .content p{
+    margin: 5px 0 20px 0;
+  }
+
+  .imgCookie {
+    width: 595px;
+    height: 419px;
+  }
+
+  .item {
     font-family: "RobotoMono-Regular";
     color: white;
+    border-radius: 15px;
+    border: none;
+    background-color: #1c87c9;
+    box-shadow: 0 5px 0 #105cad;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    transition: 0.66s;
+    padding: 10px;
+    margin-left: 2%;
+  }
+
+  .item:hover {
+    background-color: #e9f7ff;
+    box-shadow: 0 5px 0 #9cb3cc;
+    color: #1c87c9;
+    transition: 0.33s;
+  }
+
+  .lien {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    margin-left: 2%;
+  }
+
+  .contperso {  
+    display: flex;
+  }
+
+  .adstandard {
+    display: flex;
+  }
+
+  .measure {
+    display: flex;
+  }
+
+  .btnperso {
+    font-family: "RobotoMono-Regular";
+    color: black;
+    border-radius: 15px;
+    border: none;
+    background-color: #e9f7ff;
+    box-shadow: 0 5px 0 #9cb3cc;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    transition: 0.66s;
+    margin-bottom: 8%;
+    margin-left: 15%;
+    padding: 1.3%;
+    text-align: center;
+  }
+
+  .btnperso:hover {
+    color: #1c87c9;
+    transition: 0.33s;
+  }
+
+  .btnred {
+    background-color: #e91818;
+    box-shadow: 0 5px 0 #9c2525;
+  }
+
+  .btngreen {
+    color: #008000;
+    box-shadow: 0 5px 0 #096409;
   }
 
   /* ------------------------------------*/
