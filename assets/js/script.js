@@ -1,3 +1,5 @@
+// Les Cookies
+
 var btnaccepted = document.querySelector('.btnaccepted')
 var btnrefuse = document.querySelector('.btnrefuse');
 var btnSettings = document.querySelector('.item');
@@ -34,4 +36,3 @@ redList.forEach(function (red) {
     e.target.previousElementSibling.classList.remove('btngreen')
   })
 })
-

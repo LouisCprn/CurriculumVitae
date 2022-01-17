@@ -66,7 +66,7 @@
     color: #1c87c9;
     transition: 0.33s;
   }
-  
+
   .btnrefuse:hover {
     background-color: #e9f7ff;
     box-shadow: 0 5px 0 #9cb3cc;
@@ -98,21 +98,21 @@
     background-color: rgb(36, 36, 39);
     padding: 25px 25px 30px 25px;
     border-radius: 15px;
-    box-shadow: 1px 7px 14px -5px rgba(0,0,0,0.15);
+    box-shadow: 1px 7px 14px -5px rgba(0, 0, 0, 0.15);
     text-align: center;
     color: white;
     width: 23%;
     display: none;
   }
 
-  .modale.hide{
+  .modale.hide {
     opacity: 0;
     pointer-events: none;
     transform: scale(0.8);
     transition: all 0.3s ease;
   }
 
-  ::selection{
+  ::selection {
     color: #fff;
     background: #FCBA7F;
   }
@@ -121,7 +121,7 @@
     margin-bottom: 8%;
   }
 
-  .content p{
+  .content p {
     margin: 5px 0 20px 0;
   }
 
@@ -154,7 +154,7 @@
     margin-left: 2%;
   }
 
-  .contperso {  
+  .contperso {
     display: flex;
   }
 
@@ -791,6 +791,96 @@
   .letter-image:hover .shadow {
     width: 250px;
   }
+}
+
+/* ---------------------------------------------*/
+/* ---------------- Portfolio ------------------*/
+/* ---------------------------------------------*/
+
+.bgFolio {
+  background: rgb(25, 25, 43);
+  background: linear-gradient(90deg, rgb(25, 25, 43) 0%, rgb(25, 25, 43) 35%, rgba(255, 255, 255, 1) 35%);
+  font-family: "RobotoMono-Regular";
+  display: flex;
+  justify-content: center;
+}
+
+.textColoring {
+  font-size: 2vh;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 31%, rgb(25, 25, 43) 0%, rgb(25, 25, 43) 35%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 1%;
+  margin-top: 10%;
+}
+
+.marginIntern {
+  margin-bottom: 4%;
+}
+
+#lastname {
+  position: absolute;
+  padding: 1%;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#firstname {
+  position: absolute;
+  padding: 1%;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#email {
+  position: absolute;
+  padding: 1%;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#btnSend {
+  position: absolute;
+  top: 55%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  font-family: "RobotoMono-Regular";
+  color: white;
+  border-radius: 15px;
+  border: none;
+  background-color: #1c87c9;
+  box-shadow: 0 5px 0 #105cad;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.66s;
+  padding: 10px;
+  margin-left: 2%;
+}
+
+#btnSend:hover {
+  background-color: #e9f7ff;
+  box-shadow: 0 5px 0 #9cb3cc;
+  color: #1c87c9;
+  transition: 0.33s;
+}
+
+.modaleFolio {
+  font-family: "RobotoMono-Regular";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(36, 36, 39);
+  padding: 25px 25px 30px 25px;
+  border-radius: 15px;
+  box-shadow: 1px 7px 14px -5px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  color: white;
+  width: 23%;
+  display: none;
 }
 
 @media screen AND (max-width: 768px) {
