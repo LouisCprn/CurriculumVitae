@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-html {
-  overflow-x: hidden;
-}
-
 /* ------------------------------------*/
 /* --------------- Font ---------------*/
 /* ------------------------------------*/
@@ -31,7 +27,8 @@ html {
   /* ------------- Cookies --------------*/
   /* ------------------------------------*/
 
-  html {
+  #page1 {
+    overflow-y: hidden;
     overflow-y: hidden;
   }
 
@@ -44,7 +41,8 @@ html {
     bottom: 0%;
     position: absolute;
     padding: 2%;
-    width: 100%;
+    z-index: 1;
+    width: 96vw;
   }
 
   .btnaccepted {
@@ -59,7 +57,7 @@ html {
     text-align: center;
     transition: 0.66s;
     padding: 5px;
-    margin-left: 2%;
+    margin-left: 1%;
   }
 
   .btnaccepted:hover {
@@ -88,8 +86,7 @@ html {
     text-align: center;
     transition: 0.66s;
     padding: 5px;
-    margin-left: 2%;
-    margin-right: 5%;
+    margin-left: 1%;
   }
 
   .modale {
