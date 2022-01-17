@@ -19,6 +19,8 @@ btnSettings.addEventListener('click', function(){
     document.querySelector('.modale').style.display = "none";
 })
 
+// Section personnalisation des cookies
+
 var greenList = document.querySelectorAll('.btnperso');
 
 greenList.forEach(function (green) {

@@ -125,6 +125,12 @@
     margin: 5px 0 20px 0;
   }
 
+  .imgcookies {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 25px;
+  }
+
   .item {
     font-family: "RobotoMono-Regular";
     color: white;
@@ -305,7 +311,7 @@
     z-index: 3;
   }
 
-  img {
+  .imgMe {
     width: 120px;
     height: 150px;
     border-radius: 60px;
@@ -867,20 +873,47 @@
   transition: 0.33s;
 }
 
-.modaleFolio {
+.divthank {
+  background: rgb(25, 25, 43);
+  background: linear-gradient(90deg, rgb(25, 25, 43) 0%, rgb(25, 25, 43) 35%, rgba(255, 255, 255, 1) 35%);
+  font-family: "RobotoMono-Regular";
+  display: flex;
+  justify-content: center;
+}
+
+#zonning {
   font-family: "RobotoMono-Regular";
   position: absolute;
-  top: 50%;
+  padding: 1%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgb(36, 36, 39);
-  padding: 25px 25px 30px 25px;
-  border-radius: 15px;
-  box-shadow: 1px 7px 14px -5px rgba(0, 0, 0, 0.15);
-  text-align: center;
+}
+
+#btnBack {
+  position: absolute;
+  top: 55%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  font-family: "RobotoMono-Regular";
   color: white;
-  width: 23%;
+  border-radius: 15px;
+  border: none;
+  background-color: #1c87c9;
+  box-shadow: 0 5px 0 #105cad;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.66s;
+  padding: 10px;
+  margin-left: 2%;
   display: none;
+}
+
+#btnBack:hover {
+  background-color: #e9f7ff;
+  box-shadow: 0 5px 0 #9cb3cc;
+  color: #1c87c9;
+  transition: 0.33s;
 }
 
 @media screen AND (max-width: 768px) {
