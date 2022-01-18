@@ -826,7 +826,7 @@
 
 #lastname {
   position: absolute;
-  padding: 1%;
+  padding: 1.5%;
   top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -834,7 +834,7 @@
 
 #firstname {
   position: absolute;
-  padding: 1%;
+  padding: 1.5%;
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -842,7 +842,7 @@
 
 #email {
   position: absolute;
-  padding: 1%;
+  padding: 1.5%;
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -862,7 +862,7 @@
   text-decoration: none;
   text-align: center;
   transition: 0.66s;
-  padding: 10px;
+  padding: 15px;
   margin-left: 2%;
 }
 
@@ -904,7 +904,7 @@
   text-decoration: none;
   text-align: center;
   transition: 0.66s;
-  padding: 10px;
+  padding: 15px;
   margin-left: 2%;
   display: none;
 }

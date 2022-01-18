@@ -8,5 +8,4 @@ btnSend.addEventListener('click', function () {
     document.getElementById('divfolio').style.display = "none";
     document.getElementById('zonning').innerHTML = 'Merci,' + ` ${firstname} ${lastname}` + ' à bientôt';
     document.getElementById('btnBack').style.display = "block";
-
 })
