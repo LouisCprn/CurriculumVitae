@@ -27,6 +27,12 @@
   /* ------------- Cookies --------------*/
   /* ------------------------------------*/
 
+  .btnColorModale {
+    background-color: rgb(25, 25, 43);;
+    color: rgb(25, 25, 43);
+    border: none;
+  }
+
   #page1 {
     overflow-y: hidden;
     overflow-y: hidden;
