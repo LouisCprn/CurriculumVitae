@@ -31,8 +31,6 @@
   src: url(../font/Montserrat-Regular.ttf);
 }
 
-@media screen AND (min-width: 768px) {
-
   /* ------------------------------------*/
   /* ------------- NAVBAR ---------------*/
   /* ------------------------------------*/
@@ -277,12 +275,6 @@
     margin-left: 5%;
     margin-top: 10%;
     text-decoration: none;
-  }
-
-  #text1 {
-    grid-column: 6/10;
-    grid-row: 5/10;
-    font-family: "RobotoMono-Regular";
   }
 
   #bouton1 {
@@ -678,7 +670,6 @@
   .letter-image:hover .shadow {
     width: 250px;
   }
-}
 
 /* ---------------------------------------------*/
 /* ---------------- Portfolio ------------------*/
@@ -801,62 +792,101 @@
 
   html {
     overflow-x: hidden;
+    overflow-y: hidden;
   }
 
   .couleurbackground {
     background: rgb(25, 25, 43);
     background: linear-gradient(90deg, rgb(25, 25, 43) 0%, rgb(25, 25, 43) 35%, rgba(255, 255, 255, 1) 35%);
+    height: 102vh;
   }
 
     /* ------------------------------------*/
   /* ------------- NAVBAR ---------------*/
   /* ------------------------------------*/
 
-  .navbar {
+  .nav-links {
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Montserrat-Regular";
-    background-color: black;
-    color: white;
+    flex-direction: column;
     height: 100vh;
+    width: 100vw;
+    transform: translateY(-100vh);
+    transition: transform 0.8s ease;
+    overflow-y: hidden;
+    position: absolute;
+    z-index: 1;
   }
 
-  .navbar h1 {
+  .nav-links h1 {
     font-size: 4vh;
+    color: white;
     font-family: "Montserrat-Bold";
-    margin-bottom: 15%;
+    margin-bottom: 2%;
   }
 
-  .navbar li {
-    border: none;
+  .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     list-style: none;
+  }
+
+  .nav-links li {
     display: flex;
     justify-content: center;
-    letter-spacing: 1px;
-    margin-bottom: 5%;
   }
 
-  .navbar a {
-    text-decoration: none;
+  .nav-links a {
     color: white;
+    font-family: "Montserrat-Regular";
     font-size: 2vh;
+    text-decoration: none;
+    margin-bottom: 10%;
   }
 
-  .navbar a:hover {
+  .nav-links a:hover {
     color: #f8b500;
-    transform: scale(0.5rem);
+  }
+
+  .burger {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .burger div {
+    background-color: white;
+    width: 45px;
+    height: 2px;
+    margin-bottom: 5px;
+    transition: transform 0.8s ease;
+  }
+
+  .nav-links.show {
+    transform: translateY(0);
+    transition: transform 0.8s ease;
+  }
+
+  .burger.show-x .line1 {
+    transform: translate(-5%, 210%) rotate(45deg);
+  }
+
+  .burger.show-x .line2 {
+    transform: translate(-10%, -110%) rotate(-45deg);
+  }
+
+  .burger.show-x .line3 {
+    display: none;
   }
 
   /* ------------------------------------*/
   /* ------- Carte Présentation ---------*/
   /* ------------------------------------*/
-  .gridtemplate {
-    display: grid;
-    grid-template-columns: repeat(10, 10vw);
-    grid-template-rows: repeat(10, 10vh);
-  }
-
   .gridtemplatecarte {
     display: grid;
     grid-template-columns: repeat(20, 5vw);
@@ -864,8 +894,8 @@
   }
 
   .gridcarte {
-    grid-column: 5/20;
-    grid-row: 2/20;
+    grid-column: 3/6;
+    grid-row: 3/7;
   }
 
   .card {
@@ -955,86 +985,21 @@
 
 
   .boutontemplate {
-    border-radius: 15px;
-    background-color: #1c87c9;
-    box-shadow: 0 5px 0 #105cad;
-    color: white;
-    padding: 1em 1.5em;
-    position: relative;
-    text-decoration: none;
-    display: inline-block;
-    font-family: "RobotoMono-Bold";
-    text-align: center;
-    transition: 0.66s;
-  }
-
-  .boutontemplate:hover {
-    background-color: #e9f7ff;
-    box-shadow: 0 5px 0 #9cb3cc;
-    color: #1c87c9;
-    transition: 0.33s;
-  }
-
-  .boutonsoon {
-    border-radius: 15px;
-    background-color: #1c87c9;
-    box-shadow: 0 5px 0 #105cad;
-    color: white;
-    padding: 1em 1.5em;
-    position: relative;
-    text-decoration: none;
-    display: inline-block;
-    font-family: "RobotoMono-Bold";
-    text-align: center;
-    pointer-events: none;
+    display: none;
   }
 
   #propos {
     grid-column: 4/20;
-    grid-row: 9/20;
-    font-family: "RobotoMono-Bold";
-    margin-left: 5%;
-  }
-
-  #text1 {
-    grid-column: 6/10;
-    grid-row: 4/10;
-    font-family: "RobotoMono-Regular";
-  }
-
-  #bouton1 {
-    grid-column: 5/20;
     grid-row: 15/20;
-    width: 160px;
-    height: 20px;
-  }
-
-  #bouton2 {
-    grid-column: 5/20;
-    grid-row: 17/20;
-    width: 160px;
-    height: 20px;
-  }
-
-  #bouton3 {
-    grid-column: 5/20;
-    grid-row: 19/20;
-    width: 160px;
-    height: 20px;
-  }
-
-  .barrecolor {
-    background-color: #105cad;
-    height: 200px;
-    width: 5px;
-    margin-left: 32px;
+    font-family: "RobotoMono-Bold";
+    margin-left: 7%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 20%, rgb(25, 25, 43) 0%, rgb(25, 25, 43) 35%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   #barreposition {
     display: none;
-    grid-column: 14/20;
-    grid-row: 8/20;
-    margin-left: 15%;
   }
 
   .iconeaccueil {
@@ -1046,108 +1011,78 @@
   }
 
   #telephone {
-    grid-column: 8/20;
-    grid-row: 11/20;
+    color: #fff;
+    grid-column: 6/20;
+    grid-row: 17/20;
   }
 
   #telephonetext {
-    grid-column: 9/20;
-    grid-row: 11/20;
+    grid-column: 8/20;
+    grid-row: 17/20;
     margin-left: 4%;
     margin-top: 1%;
   }
 
   #mail {
-    grid-column: 8/20;
-    grid-row: 12/20;
+    color: #fff;
+    grid-column: 6/20;
+    grid-row: 18/20;
     margin-top: 5%;
   }
 
   #mailtext {
-    grid-column: 9/20;
-    grid-row: 12/20;
+    grid-column: 8/20;
+    grid-row: 18/18;
     margin-left: 4%;
     margin-top: 5%;
   }
 
   #adresse {
-    grid-column: 8/20;
-    grid-row: 13/20;
+    color: #fff;
+    grid-column: 6/20;
+    grid-row: 19/20;
     margin-top: 15%;
   }
 
   #adressetext {
-    grid-column: 9/20;
-    grid-row: 13/20;
+    grid-column: 8/20;
+    grid-row: 19/20;
     margin-left: 4%;
-    margin-top: 9%;
+    margin-top: 13%;
   }
 
   #adressetext2 {
-    grid-column: 9/20;
-    grid-row: 14/20;
+    grid-column: 8/20;
+    grid-row: 19/20;
     margin-left: 4%;
+    margin-top: 23%;
   }
 
   #textloisirs {
     display: none;
-    grid-column: 16/20;
-    grid-row: 8/20;
   }
 
   #technologie {
     display: none;
-    grid-column: 15/20;
-    grid-row: 9/20;
-    margin-left: 8%;
   }
 
   #technologietext {
     display: none;
-    grid-column: 15/20;
-    grid-row: 9/20;
-    margin-left: 16%;
   }
 
   #basketball {
     display: none;
-    grid-column: 15/20;
-    grid-row: 10/20;
-    margin-left: 8%;
   }
 
   #basketballtext {
     display: none;
-    grid-column: 15/20;
-    grid-row: 10/20;
-    margin-left: 16%;
-  }
-
-  #ski {
-    display: none;
-    grid-column: 15/20;
-    grid-row: 11/20;
-    margin-left: 8%;
-  }
-
-  #skitext {
-    display: none;
-    grid-column: 15/20;
-    grid-row: 11/20;
-    margin-left: 16%;
   }
 
   #film {
     display: none;
-    grid-column: 15/20;
-    grid-row: 12/20;
-    margin-left: 8%;
   }
 
   #filmtext {
     display: none;
-    grid-column: 15/20;
-    grid-row: 12/20;
-    margin-left: 16%;
   }
 }
