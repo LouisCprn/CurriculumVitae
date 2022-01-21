@@ -82,18 +82,33 @@
   }
 
   .burger {
-    position: absolute;
-    top: 5%;
-    left: 5%;
+    position: fixed;
     cursor: pointer;
+    margin-top: 5vh;
+    margin-left: 5vh;
     z-index: 2;
+    transition: transform 0.8s ease;
   }
 
-  .burger div {
+  .line1 {
     background-color: white;
     width: 45px;
     height: 2px;
-    margin-bottom: 5px;
+    transition: transform 0.8s ease;
+  }
+
+  .line2 {
+    background-color: white;
+    width: 30px;
+    height: 2px;
+    margin: 1vh 0 1vh 0;
+    transition: transform 0.8s ease;
+  }
+
+  .line3 {
+    background-color: white;
+    width: 45px;
+    height: 2px;
     transition: transform 0.8s ease;
   }
 
@@ -103,15 +118,17 @@
   }
 
   .burger.show-x .line1 {
-    transform: translate(-5%, 210%) rotate(45deg);
-  }
-
-  .burger.show-x .line2 {
-    transform: translate(-10%, -110%) rotate(-45deg);
+    transform: translate(8px, 13px) rotate(45deg);
   }
 
   .burger.show-x .line3 {
-    display: none;
+    transform: translate(7px, -6px) rotate(-45deg);
+  }
+
+  .burger.show-x .line2 {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
   }
 
   /* ------------------------------------*/
@@ -846,14 +863,31 @@
   }
 
   .burger {
-    position: absolute;
-    top: 5%;
-    left: 5%;
+    position: fixed;
     cursor: pointer;
+    margin-top: 5vh;
+    margin-left: 5vh;
     z-index: 2;
+    transition: transform 0.8s ease;
   }
 
-  .burger div {
+  .line1 {
+    background-color: white;
+    width: 45px;
+    height: 2px;
+    margin-bottom: 5px;
+    transition: transform 0.8s ease;
+  }
+
+  .line2 {
+    background-color: white;
+    width: 30px;
+    height: 2px;
+    margin-bottom: 5px;
+    transition: transform 0.8s ease;
+  }
+
+  .line3 {
     background-color: white;
     width: 45px;
     height: 2px;
@@ -867,15 +901,17 @@
   }
 
   .burger.show-x .line1 {
-    transform: translate(-5%, 210%) rotate(45deg);
-  }
-
-  .burger.show-x .line2 {
-    transform: translate(-10%, -110%) rotate(-45deg);
+    transform: translate(10px, 10px) rotate(45deg);
   }
 
   .burger.show-x .line3 {
-    display: none;
+    transform: translate(8px, -5px) rotate(-45deg);
+  }
+
+  .burger.show-x .line2 {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
   }
 
   /* ------------------------------------*/
